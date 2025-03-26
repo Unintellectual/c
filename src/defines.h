@@ -120,7 +120,13 @@ flush;\
 
 #define MemoryCopy(dest, src, size) memmove((dest), (src), (size))
 #define MemoryCopyStruct(d,s) MemoryCopy((d),(s), Min(sizeof(*(d)) , sizeof(*(s))))
-#define MemoryZero(d,z) memset((d), 0, (z))
+#define MemoryZero(d, z) do { \
+    char* ptr = (char*)(d); \
+    size_t count = (z); \
+    while (count--) { \
+        *ptr++ = 0; \
+    } \
+} while(0)
 #define MemoryZeroStruct(d,s) MemoryZero((d),sizeof(s))
 
 #define ArrayCount(a) (sizeof(a) / sizeof((a)[0]))

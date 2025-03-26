@@ -20,7 +20,7 @@ OUT="$SCRIPT_DIR/bin/$(basename "$SRC" .c)"
 mkdir -p "$(dirname "$OUT")"
 
 # Debugging
-echo "Compiling $SRC -> $OUT"
+echo "Compiling $SRC"
 echo "Bin directory: $(dirname "$OUT")"
 
 # Compile the program
@@ -28,7 +28,7 @@ $CC $CFLAGS $SRC -o "$OUT"
 
 # Check if compilation was successful
 if [ $? -eq 0 ]; then
-    echo "Build successful: $OUT"
+    echo "Build successful"
 else
     echo "Build failed"
     exit 1

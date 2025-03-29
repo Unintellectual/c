@@ -5,6 +5,10 @@ A simple base layer, and utilities for my own C development. A lot of the stuff 
 
 https://www.youtube.com/c/Mr4thProgramming
 https://www.youtube.com/@voxelrifts
+https://github.com/PixelRifts/c-codebase
+https://en.wikipedia.org/wiki/C_data_types#Main_types
+https://sourceforge.net/p/predef/wiki/Home/
+
 
 ## What does this codebase have (Still in development)
 
@@ -14,7 +18,7 @@ https://www.youtube.com/@voxelrifts
   - [ ] Thread Context
   - [ ] Math
   - [ ] Logging
-  - [ ] Generic Data structure defining macros
+  - [x] Generic Data structure defining macros
 - [ ] An OS Layer: (Only win32 and x11 linux implemented)
   - [ ] Basic File handling
   - [ ] Dynamic Library Loading

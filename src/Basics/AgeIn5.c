@@ -25,7 +25,7 @@ void get_user_data(user_data *user)
     int prev_age = user->age - 5;
     int new_age = user->age + 5;
     
-    printf("\Did you know that in five years you'll be %d years old?\n", new_age);
+    printf("\nDid you know that in five years you'll be %d years old?\n", new_age);
     printf("And five years ago you were %d! Imagine that!\n", prev_age);
 
     
